@@ -1,0 +1,24 @@
+{
+  "name": "Youtube Pop Up Blocker",
+  "version": "1.0",
+  "description": "It will block all pop up while playing youtube video",
+  "permissions": ["webRequest",
+                  "webRequestBlocking",
+                  "webNavigation",
+                  "*://*/*"],
+  "background": {
+              "scripts": []
+   },
+  "icons": { "16": "icon16.png",
+            "48": "icon48.png",
+           "128": "icon128.png"
+   },
+   "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/watch?*", "*://m.youtube.com/watch?*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "web_accessible_resources": ["YBlocker.png"],
+  "manifest_version": 2
+}
