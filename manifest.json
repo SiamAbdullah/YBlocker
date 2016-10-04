@@ -1,5 +1,5 @@
 {
-  "name": "Youtube Pop Up Blocker",
+  "name": "YBlocker",
   "version": "1.0",
   "description": "It will block all pop up while playing youtube video",
   "permissions": ["webRequest",
